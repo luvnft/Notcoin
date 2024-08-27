@@ -80,7 +80,7 @@ const App = () => {
               <div className="w-full bg-[#fad258] py-4 rounded-2xl flex justify-around">
                 <a href="https://t.me/+2KBvu5JMHYk4MDdh" target="_blank" rel="noopener noreferrer">
                   <button className="flex flex-col items-center gap-1">
-                    <img src={bear} width={24} height={24} alt="gem" />
+                    <img src={bear} width={24} height={24} alt="Gem" />
                     <span>PPV GEM</span>
                   </button>
                 </a>
@@ -94,7 +94,7 @@ const App = () => {
                 <div className="h-[48px] w-[2px] bg-[#fddb6d]"></div>
                 <a href="https://tonass.arvrtise.com/" target="_blank" rel="noopener noreferrer">
                   <button className="flex flex-col items-center gap-1">
-                    <img src={rocket} width={24} height={24} alt="bank" />
+                    <img src={rocket} width={24} height={24} alt="Bank" />
                     <span>Stake (Soon)</span>
                   </button>
                 </a>
