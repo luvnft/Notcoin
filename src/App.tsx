@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './index.css';
 import Arrow from './icons/Arrow';
-import { bear, coin, highVoltage, notcoin, rocket, trophy } from './images';
+import { gem, coin, highVoltage, notcoin, bank, trophy } from './images';
 
 const App = () => {
   const [points, setPoints] = useState(29857775);
@@ -48,9 +48,11 @@ const App = () => {
 
         <div className="fixed top-0 left-0 z-10 flex flex-col items-center w-full px-4 pt-8 text-white">
           <div className="w-full cursor-pointer">
-            <div className="bg-[#1f1f1f] text-center py-2 rounded-xl">
-              <p className="text-lg">Join squad <Arrow size={18} className="inline-block mb-1 ml-0" /></p>
-            </div>
+            <a href="https://t.me/share/url?text=%0A%F0%9F%91%91%20Join%20me%20in%20@Major%20game%20and%20earn%20$MAJOR%20token%20soon!%0A%E2%AD%90%EF%B8%8F%20750%20rating%20bonus%20for%20you.%0A%E2%AD%90%EF%B8%8F%201000%20rating%20bonus%20if%20you%20are%20Premium.%0A&url=https://t.me/major/start?startapp=1407189337" target="_blank" rel="noopener noreferrer">
+              <div className="bg-[#1f1f1f] text-center py-2 rounded-xl">
+                <p className="text-lg">Join squad <Arrow size={18} className="inline-block mb-1 ml-0" /></p>
+              </div>
+            </a>
           </div>
           <div className="flex items-center mt-12 text-5xl font-bold">
             <img src={coin} width={44} height={44} />
@@ -76,10 +78,10 @@ const App = () => {
             </div>
             <div className="flex items-center flex-grow text-sm max-w-60">
               <div className="w-full bg-[#fad258] py-4 rounded-2xl flex justify-around">
-                <a href="https://x.com/ppvgem" target="_blank" rel="noopener noreferrer">
+                <a href="https://t.me/+2KBvu5JMHYk4MDdh" target="_blank" rel="noopener noreferrer">
                   <button className="flex flex-col items-center gap-1">
-                    <img src={bear} width={24} height={24} alt="Bear" />
-                    <span>Frens</span>
+                    <img src={bear} width={24} height={24} alt="gem" />
+                    <span>PPV GEM</span>
                   </button>
                 </a>
                 <div className="h-[48px] w-[2px] bg-[#fddb6d]"></div>
@@ -92,8 +94,8 @@ const App = () => {
                 <div className="h-[48px] w-[2px] bg-[#fddb6d]"></div>
                 <a href="https://tonass.arvrtise.com/" target="_blank" rel="noopener noreferrer">
                   <button className="flex flex-col items-center gap-1">
-                    <img src={rocket} width={24} height={24} alt="Rocket" />
-                    <span>Boosts</span>
+                    <img src={rocket} width={24} height={24} alt="bank" />
+                    <span>Stake (Soon)</span>
                   </button>
                 </a>
               </div>
