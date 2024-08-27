@@ -37,59 +37,65 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-main min-h-screen px-4 flex flex-col items-center text-white font-medium">
+    <div className="flex flex-col items-center min-h-screen px-4 font-medium text-white bg-gradient-main">
 
-      <div className="absolute inset-0 h-1/2 bg-gradient-overlay z-0"></div>
-      <div className="absolute inset-0 flex items-center justify-center z-0">
+      <div className="absolute inset-0 z-0 h-1/2 bg-gradient-overlay"></div>
+      <div className="absolute inset-0 z-0 flex items-center justify-center">
         <div className="radial-gradient-overlay"></div>
       </div>
 
-      <div className="w-full z-10 min-h-screen flex flex-col items-center text-white">
+      <div className="z-10 flex flex-col items-center w-full min-h-screen text-white">
 
-        <div className="fixed top-0 left-0 w-full px-4 pt-8 z-10 flex flex-col items-center text-white">
+        <div className="fixed top-0 left-0 z-10 flex flex-col items-center w-full px-4 pt-8 text-white">
           <div className="w-full cursor-pointer">
             <div className="bg-[#1f1f1f] text-center py-2 rounded-xl">
-              <p className="text-lg">Join squad <Arrow size={18} className="ml-0 mb-1 inline-block" /></p>
+              <p className="text-lg">Join squad <Arrow size={18} className="inline-block mb-1 ml-0" /></p>
             </div>
           </div>
-          <div className="mt-12 text-5xl font-bold flex items-center">
+          <div className="flex items-center mt-12 text-5xl font-bold">
             <img src={coin} width={44} height={44} />
             <span className="ml-2">{points.toLocaleString()}</span>
           </div>
-          <div className="text-base mt-2 flex items-center">
+          <div className="flex items-center mt-2 text-base">
             <img src={trophy} width={24} height={24} />
-            <span className="ml-1">Gold <Arrow size={18} className="ml-0 mb-1 inline-block" /></span>
+            <span className="ml-1">Gold <Arrow size={18} className="inline-block mb-1 ml-0" /></span>
           </div>
         </div>
 
 
-        <div className="fixed bottom-0 left-0 w-full px-4 pb-4 z-10">
-          <div className="w-full flex justify-between gap-2">
-            <div className="w-1/3 flex items-center justify-start max-w-32">
+        <div className="fixed bottom-0 left-0 z-10 w-full px-4 pb-4">
+          <div className="flex justify-between w-full gap-2">
+            <div className="flex items-center justify-start w-1/3 max-w-32">
               <div className="flex items-center justify-center">
                 <img src={highVoltage} width={44} height={44} alt="High Voltage" />
                 <div className="ml-2 text-left">
-                  <span className="text-white text-2xl font-bold block">{energy}</span>
-                  <span className="text-white text-large opacity-75">/ 6500</span>
+                  <span className="block text-2xl font-bold text-white">{energy}</span>
+                  <span className="text-white opacity-75 text-large">/ 6500</span>
                 </div>
               </div>
             </div>
-            <div className="flex-grow flex items-center max-w-60 text-sm">
+            <div className="flex items-center flex-grow text-sm max-w-60">
               <div className="w-full bg-[#fad258] py-4 rounded-2xl flex justify-around">
-                <button className="flex flex-col items-center gap-1">
-                  <img src={bear} width={24} height={24} alt="High Voltage" />
-                  <span>Frens</span>
-                </button>
+                <a href="https://x.com/ppvgem" target="_blank" rel="noopener noreferrer">
+                  <button className="flex flex-col items-center gap-1">
+                    <img src={bear} width={24} height={24} alt="Bear" />
+                    <span>Frens</span>
+                  </button>
+                </a>
                 <div className="h-[48px] w-[2px] bg-[#fddb6d]"></div>
-                <button className="flex flex-col items-center gap-1">
-                  <img src={coin} width={24} height={24} alt="High Voltage" />
-                  <span>Earn</span>
-                </button>
+                <a href="https://t.me/+2KBvu5JMHYk4MDdh" target="_blank" rel="noopener noreferrer">
+                  <button className="flex flex-col items-center gap-1">
+                    <img src={coin} width={24} height={24} alt="Coin" />
+                    <span>Earn</span>
+                  </button>
+                </a>
                 <div className="h-[48px] w-[2px] bg-[#fddb6d]"></div>
-                <button className="flex flex-col items-center gap-1">
-                  <img src={rocket} width={24} height={24} alt="High Voltage" />
-                  <span>Boosts</span>
-                </button>
+                <a href="https://tonass.arvrtise.com/" target="_blank" rel="noopener noreferrer">
+                  <button className="flex flex-col items-center gap-1">
+                    <img src={rocket} width={24} height={24} alt="Rocket" />
+                    <span>Boosts</span>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -99,7 +105,7 @@ const App = () => {
         </div>
 
 
-        <div className="flex-grow flex items-center justify-center">
+        <div className="flex items-center justify-center flex-grow">
           <div className="relative mt-4" onClick={handleClick}>
             <img src={notcoin} width={256} height={256} alt="notcoin" />
             {clicks.map((click) => (
